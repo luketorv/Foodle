@@ -136,7 +136,6 @@ function displayResults(data) {
 	} else {
 		// Hides
 		btnNext.classList.add("hidden");
-
 	}
 }
 
