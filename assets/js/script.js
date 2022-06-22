@@ -30,9 +30,7 @@ $('body').on('click', '.recipe-image', function (e) {
 	// TODO: Show loading message
 	let id = $(this).data('id');
 	getRecipeDetails(id).then(details => {
-		/*
-		TODO: Display detail data
-		*/ 
+		displayRecipeDetails(details)
 		console.log(details)
 	});
 });
@@ -111,7 +109,7 @@ function displayResults(data) {
 		let result = data.results[i];
 		let html = `
 		<div class="box">
-		<img class="recipe-image" id="img_${i}" data-id="${result.id}" height="100" width="100" alt="${result.thumbnail_alt_text}" src="${result.thumbnail_url}">
+		<div><img class="recipe-image" id="img_${i}" data-id="${result.id}" height="100" width="100" alt="${result.thumbnail_alt_text}" src="${result.thumbnail_url}"></div>
 		<span>${result.name}</span>
 		<p>${result.description || ''}</p>
 		<button class=" button is-primary is-rounded" data-index="${i}"> Save </button>
@@ -137,6 +135,29 @@ function displayResults(data) {
 		// Hides
 		btnNext.classList.add("hidden");
 	}
+}
+
+function displayRecipeDetails(data){
+	
+	const instructionsHtml = [];
+	for (let i=0; i<data.instructions.length;i++){
+		let instruction = data.instructions[i];
+		instructionsHtml.push(`<li>${instruction.display_text}</li>`)
+	}	
+	const html = `
+	<div id="picture" class="box">
+		<img alt="${data.thumbnail_alt_text}" src="${data.thumbnail_url}">
+	</div>
+	<div id="description">
+		${data.description || " Description not available" }
+	</div>
+	<div>
+		<div>
+			${instructionsHtml.join('')}
+		</div>
+	</div>`;
+	$("#recipe-details").html(html);
+	
 }
 
 // Show loading message
