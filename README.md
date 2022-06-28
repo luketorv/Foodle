@@ -1,6 +1,6 @@
-# Portfolio
+# Foodle
 ## Description
-A site to find recipes of your favorite foods
+A site to find recipes of your favorite foods.
 ![foodle1](https://user-images.githubusercontent.com/104324965/176089631-01185fe2-dcfb-4d2b-9766-4992e940dbfa.jpg)
 
 ## Deployed Site
@@ -21,3 +21,4 @@ https://luketorv.github.io/Foodle/
 
 
 </li>
+ 
