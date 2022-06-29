@@ -1,12 +1,24 @@
 # Foodle
-Group Project 1 
+## Description
+A site to find recipes of your favorite foods.
+![foodle1](https://user-images.githubusercontent.com/104324965/176089631-01185fe2-dcfb-4d2b-9766-4992e940dbfa.jpg)
 
-1.User Story:
-As a person who loves to cook
-I want to find recipes and ingrediensts that i need to prepare for my favorite dishes.
-Therefore, I check in box "save to favorite" to save my favorite dish's ingredients that i need to prepare for the cooking.
+## Deployed Site
+https://luketorv.github.io/Foodle/
+## Usage
+<ul>
+<li>
+<a>When a food is searched, a list comes up on the right side column with recipes that a user can choose to open or save.</a>
+ 
+ ![foodle2](https://user-images.githubusercontent.com/104324965/176089660-65822394-afa6-41b8-a25e-87ac2f960c5f.jpg)
 
-2.Criteria:
-Given a Foodle Page with a form input
-When I search for a specific dish
-Then I am presented with a picture together with a description and a list of ingredients of that dish.
+  
+</li>
+<li>
+<a>When a recipe is clicked, it appears on the left column. </a>
+
+![foodle3](https://user-images.githubusercontent.com/104324965/176089759-3b995495-4d6c-44be-8557-6b701dc64a34.jpg)
+
+
+</li>
+ 
